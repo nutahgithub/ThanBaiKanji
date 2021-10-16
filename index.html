@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js" defer></script>
+</head>
+<body onload="init();">
+    <div class="app">
+        <header>
+            <h1>Thần bài Kanji</h1>
+        </header>
+        <div class="main">
+            <div class="main-1">
+                <div class="team team-a">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+    
+                <div class="area-play">
+                    <div class="card-choice card-team-a">
+                        <div class="card"></div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="card-choice card-team-b">
+                        <div class="card" onclick="setDisplayCard(this);"></div>
+                    </div>
+                </div>
+    
+                <div class="team team-b">
+                    <div class="card" onclick="choiceCard(this);">
+                        
+                    </div>
+                    <div class="card" onclick="choiceCard(this);">
+                        
+                    </div>
+                    <div class="card" onclick="choiceCard(this);">
+                        
+                    </div>
+                    <div class="card" onclick="choiceCard(this);">
+                        
+                    </div>
+                    <div class="card" onclick="choiceCard(this);">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-2">
+                <div class="rule">
+                    <h1 class="title-name">Luật chơi:</h1>
+                    <div class="group-character">
+                        <img src="./assets/img/king.jpeg" alt="">
+                        <span class="card-name">(Nhà Vua)</span>
+                    </div>
+                    <div class="group-character">
+                        <img src="./assets/img/commoner.jpeg" alt="">
+                        <span class="card-name">(Dân Thường)</span>
+                    </div>
+                    <div class="group-character">
+                        <img src="./assets/img/slave.jpeg" alt="">
+                        <span class="card-name">(Nô Lệ)</span>
+                    </div>
+                    <ul class="rule-content">
+                        <li class="content-item"><b class="win">Nhà Vua</b> vs <b>Dân Thường</b></li>
+                        <li class="content-item"><b class="win">Dân Thường</b> vs <b>Nô Lệ</b></li>
+                        <li class="content-item"><b class="win">Nô Lệ</b> vs <b>Nhà Vua</b></li>
+                        <li class="content-item"><b>Dân Thường</b> vs <b>Dân Thường</b> (Hoà)</li>
+                    </ul>
+                    <span class="note">(Màu đỏ là Win)</span>
+                </div>
+                <div class="result-game">
+                    <h1 class="title-name">Kết quả:</h1>
+                    <div class="result-content">Mở bài nào!</div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-reset" onclick="init();">Chơi lại</button>
+                    <button class="btn btn-open-card" onclick="openCard();">Mở bài</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
